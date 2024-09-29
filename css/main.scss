@@ -1,0 +1,99 @@
+:root{
+    --blue1: #3D8BF2;
+    --blue2: #3470BF;
+    --blue3: #27538C;
+    --blue4: #162840;
+    --white: #f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Euclid Circular A";
+}
+
+body{
+    min-height: 100vh;
+    background: var(--blue4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 80%;
+    max-width: 400px;
+    min-height: 500px;
+    padding: 40px;
+    color: var(--blue1);
+    border-radius: 39px;
+    border: 1px solid var(--blue3);
+
+    h1{
+        letter-spacing: -2px;
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: var(--blue1);
+        line-height: 2rem;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        label{
+            display: inline-block;
+            margin: 10px 0 5px;
+            font-size: .8rem;
+            color: var(--blue1);
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 5px 8px;
+            border: none;
+            display: block;
+            border-radius: 3px;
+            font-size: 0.9em;
+            background: none;
+            border: 1px solid var(--blue3);
+            color: var(--blue1);;
+        }
+
+        input[type="button"]{
+            margin-top: 50px;
+            border: none;
+            background: var(--blue1);
+            color: var(--blue4);
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 6px;
+            
+            &.ghost{
+                background: none;
+                border: 1px solid var(--blue3);
+                color: var(--blue1);;
+            }
+        }
+
+        .btns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .inputs{
+            width: 100%;
+        }
+    }
+
+    
+}
